@@ -2,14 +2,13 @@
 using namespace std ;
 float add(float x,float y)
 {
-  float z;
-  z=x+y;
-  return z;
+  // z=x+y;
+  return x+y;
 }
 int main()
 {
-   float x,y,z;
-    cin>>x>>y;
+   float x=8,y=9,z;
+    // cin>>x>>y;
     z=add(x,y);
     cout<<z<<endl;
 
