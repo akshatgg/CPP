@@ -15,13 +15,16 @@ if(sum<=9)
   }
   else if ( sum>9)
   {
-   int y,sum1;
+   int y,sum1=0;
+    while(sum1<=1)
+    {
    while(sum!=0)
    {
       y=sum%10;
       sum=sum/10;
       sum1=sum1+y;
    }
+    }
    printf("%d \n",sum1);
 
 
