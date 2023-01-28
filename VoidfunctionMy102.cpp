@@ -6,11 +6,11 @@ int add (int a,int b)
    c=a+b;
    return c;
 }
-int add (int a, int b,int w)
+void add (int a, int b,int w)
 {
     int z;
     z=a+b+w;
-    return z; 
+   cout<<z;
 }
 float add (float x,float y)
 {
@@ -26,7 +26,7 @@ int main()
     cout<<add(a,b)<<endl;
     int w,z;
     cin>>w;
-    cout<<add(a,b,w)<<endl;
+    add(a,b,w);
     float x,y,p;
     cin>>x>>y;
     cout<<add(x,y)<<endl;
