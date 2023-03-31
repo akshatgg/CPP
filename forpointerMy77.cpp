@@ -11,6 +11,7 @@ int main()
         p++;
     }
     cout<<p<<endl;
+    cout<<q<<endl;
     cout<<p-q<<endl;
     return 0;
 }
