@@ -12,7 +12,7 @@ T maxim(T x,T y)
 }
 
 
-float add(float x,float y)
+float add(float x,float y)       
 {
     return x+y;
 } 
