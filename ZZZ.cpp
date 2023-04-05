@@ -9,6 +9,7 @@ using namespace std;
 struct sentence{
    
    
+   
    int numb;
    string words; 
 
