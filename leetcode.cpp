@@ -19,7 +19,8 @@ int main()
     for (int i=1;i<=2*n;i++)
     {
         if(i<=n)
-        {
+        { 
+            
             cout<<num[i]<<" ";
         }
         else (i>n);
