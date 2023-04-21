@@ -3,24 +3,27 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-
 using namespace std;
 
 
 int main() {
-    int k;
-    int n;
     vector<int>v;
+    int n;
     cin>>n;
     for(int i=0;i<n;i++){
+        int k;
         cin>>k;
         v.push_back(k);
     }
-    sort(v.begin(),v.end());
-    for( auto i:v){
-        cout<<i<<" ";
+    int q,e1,e2;
+    cin>>q;
+    v.erase(v.begin()+q-1);
+    cin>>e1>>e2;
+    v.erase(v.begin()+e1-1,v.begin()+e2-1);
+    cout<<v.size()<<endl;
+    for(auto x:v){
+        cout<<x<<" ";
     }
-   
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+
     return 0;
 }
