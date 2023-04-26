@@ -7,7 +7,7 @@ class complex{
     public:
     int r=real;
     int i=img;
-//  friend complex operator+(complex c1,complex c2);
+ friend complex operator+(complex c1,complex c2);
 
 };
 
