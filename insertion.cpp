@@ -5,7 +5,7 @@ using namespace std;
   int real;
   int img;
   public:
- complex(int r=0,int i=0){
+ complex(int r,int i){
   int real=r;
   int img=i;
   }
@@ -16,10 +16,8 @@ out<<c.real<<"+i"<<c.img<<endl;
 return out;
  }
 int main(){
-    complex c(23,89);
+    complex c(2,9);
     cout<<c;
     operator<<(cout,c);
-
     return 0;
-
 }
