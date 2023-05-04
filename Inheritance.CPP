@@ -7,7 +7,6 @@ class Base{
     {
 cout<<"out"<<a<<endl;
     }
-    
 };
 class Derived:public Base
 {
