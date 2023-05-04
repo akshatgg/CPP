@@ -1,18 +1,18 @@
 #include<iostream>
 using namespace std;
-// class Record{
-// public :
+class Record{
+public :
 void game(int n,int A[]){
-    int max=A[0],min=A[0];
+    int max=0,min=0;
 int countma=0,countmi=0;
 
     
-    for(int i=1;i<n;i++){
-    //    if(i==0){
-    //     max=A[i];
-    //     min=A[i];
-    //    }
-    //    else{
+    for(int i=0;i<n;i++){
+       if(i==0){
+        max=A[i];
+        min=A[i];
+       }
+       else{
         if(min>A[i]){
            min=A[i];
            countmi++;
@@ -27,22 +27,24 @@ int countma=0,countmi=0;
         else if(min==A[i]){
             min=A[i];
         }
-    //    }
+       }
+    
     }
     cout<<(countma)<<" "<<countmi<<endl;
 }
+};
 
 
 
 
 int main(){
-    // Record r;
+    Record r;
     int n;
     cin>>n;
     int A[n];
     for(int i=0;i<n;i++){
         cin>>A[i];
     }
-    game(n,A);
+    r.game(n,A);
     return 0;
 }
