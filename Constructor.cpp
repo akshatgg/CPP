@@ -36,10 +36,6 @@ rectangle(rectangle &r){
 int area(){
     return length*breadth;
 }
-
-
-
-
 };
 int main(){
     rectangle r1(12,43);
