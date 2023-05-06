@@ -20,7 +20,7 @@ int main()
     {
         if(i<=n)
         { 
-            
+    
             cout<<num[i]<<" ";
         }
         else (i>n);
