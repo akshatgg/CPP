@@ -4,7 +4,7 @@ class A{
     public:
    
    int  a=40;
-   int b=23;
+   
     
     };
 class B : virtual public A
@@ -14,13 +14,14 @@ public:
 };
 class C : virtual public A
 {
-
+    public:
+int b=23;
 };
 class D : public C,public B
 {
     public:
    int no(){
-    return a;
+    return b;
    }
     };
 

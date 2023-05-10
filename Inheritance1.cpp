@@ -54,6 +54,8 @@ int main()
     c.setlength(12);
     c.setbreadth(34);    
     cout<<c.volume()<<endl;
+    Rectangle r;
+    cout<<r.getlength()<<endl;
     return 0;
 }
     Rectangle::Rectangle(){
