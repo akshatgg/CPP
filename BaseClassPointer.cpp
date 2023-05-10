@@ -14,7 +14,7 @@ class Derived : public base
     }
 };
 int main(){
-   Derived d,d1;
+   Derived d;
    Derived *ptr=&d;
    ptr->display1();
    ptr->display();
