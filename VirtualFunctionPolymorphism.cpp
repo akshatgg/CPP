@@ -6,13 +6,15 @@ class base{
         cout<<"Is fun1"<<endl;
     }
 };
-// class basee{
-// public:
-// void fun(){
-//     cout<<"Is fun3"<<endl;
-// }
-// };
-class derived : public base
+class basee :public base
+{
+public:
+void fun(){
+    cout<<"Is fun3"<<endl;
+    
+}
+};
+class derived : public base 
 {
     public:
     void fun(){
@@ -23,7 +25,7 @@ int main(){
 derived d;
 base *p=new derived();           //or you can  write this base *p=&d;//
 p->fun();
-derived *ptr=new derived();  
+base *ptr=new derived();  
 ptr->fun();
 
 

@@ -1,2 +1,1 @@
-  // Derived d1;
-    // Derived  d2(2,5);
+    // virtual void start()=0;
