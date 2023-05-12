@@ -19,9 +19,9 @@ class rectangle : public shape
    int breadth=0;
 
     public:
-    rectangle(int l,int b){
-    length=l;
-    breadth=b;
+    rectangle(int l,int b){ 
+    length=l; 
+    breadth=b; 
     }
   float area(){
  return length*breadth;
@@ -38,6 +38,10 @@ class circle : public shape
     circle(int r){
         radius=r;
     }
+    int setradius(int rd){
+    radius=rd;
+    return rd;
+    }
       float area(){
    return 3.14*pow(radius,2);
   }
@@ -49,8 +53,9 @@ class circle : public shape
 int main(){
     rectangle r(3,4);
     int l1=r.setlength(2);
-
-    shape *s=new circle(5);
+    circle c(4);
+    int r1=c.setradius(3) ;
+    shape *s=new circle(r1);
     
     cout<<s->area()<<endl;
     s=new rectangle(l1,4);
