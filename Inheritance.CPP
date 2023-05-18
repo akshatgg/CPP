@@ -12,6 +12,7 @@ class Derived:public Base
 {
 public:
 void show(){
+    a=8*8;
 }
 };
 int main(){
