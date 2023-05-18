@@ -12,7 +12,7 @@ class Base
 };
 class Derived :public Base
 {
-public: 
+public:
  Derived(){
     cout<<"not parametric constructor in Derived"<<endl;
 }
@@ -27,7 +27,7 @@ Derived(int a,int x) :Base(x)
 int main(){
     Derived d(3);
     Derived d1;
-    Derived  d2(2,5);
+    Derived  d2(2,5); 
 
 
     

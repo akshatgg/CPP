@@ -1,7 +1,6 @@
 #include <iostream>
 #include <math.h>
 using namespace std;
-
 class base{
     public:
     void display(){
@@ -17,6 +16,8 @@ void display(){
 };
 int main(){
 derived d;
+base b;
+b.display();
 d.display();
     return 0;
 }
